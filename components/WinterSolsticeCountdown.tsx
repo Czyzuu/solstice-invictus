@@ -49,7 +49,7 @@ const WinterSolsticeCountdown: React.FC = () => {
 
   return (
     <div className="countdown-container">
-      <div className="countdown-title">Solstice TGE Countdown</div>
+      <div className="countdown-title">Winter Solstice 2025</div>
       <div className="countdown-timer">
         <div className="countdown-item">
           <div className="countdown-value">{timeLeft.days}</div>
