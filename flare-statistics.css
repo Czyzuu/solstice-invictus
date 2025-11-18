@@ -1,0 +1,72 @@
+/* Flare Statistics Component Styles */
+.flare-statistics-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: oklch(98% .002 280);
+}
+
+.flare-statistics-graphic {
+  width: 717px;
+  aspect-ratio: 717 / 507;
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+  border-color: var(--border, oklch(88% .006 280));
+  outline-color: color-mix(in oklab, var(--ring, oklch(66.29% .1793 37.57)) 50%, transparent);
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  color: transparent;
+  transform: rotate(118.846deg);
+  scale: 1.4;
+  scrollbar-width: thin;
+  scrollbar-color: oklch(43.38% .0234 275.84 / 0.3) transparent;
+}
+
+/* Slow spin animation (300s duration) */
+@keyframes slow-spin {
+  from {
+    transform: rotate(118.846deg);
+  }
+  to {
+    transform: rotate(478.846deg); /* 118.846 + 360 */
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 300s linear infinite;
+}
+
+/* Responsive scaling - 140% on mobile, 100% on xl screens */
+@media (min-width: 1280px) {
+  .xl-scale-100 {
+    scale: 1;
+  }
+}
+
+.scale-140 {
+  scale: 1.4;
+}
+
+.transform {
+  transform: rotate(118.846deg);
+}
+
+.select-none {
+  user-select: none;
+}
+
+/* Disable animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slow-spin {
+    animation: none;
+  }
+}
+
