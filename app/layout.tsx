@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Flare Statistics",
-  description: "Flare Statistics Display",
+  title: "Solstice TGE Countdown",
+  description: "Solstice TGE Countdown",
 };
 
 export default function RootLayout({
