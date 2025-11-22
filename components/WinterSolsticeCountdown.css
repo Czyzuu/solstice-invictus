@@ -173,25 +173,46 @@
 
   .countdown-item {
     width: auto;
-    min-width: clamp(3rem, 8vw, 5rem);
+    min-width: clamp(2.8rem, 8vw, 4.5rem);
     overflow: visible;
-    padding: 0 0.15rem;
+    padding: 0 0.3rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .countdown-separator {
-    width: clamp(0.5rem, 1.5vw, 1rem);
+    width: clamp(0.6rem, 2vw, 1.2rem);
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .countdown-timer::-webkit-scrollbar {
     display: none;
   }
 
-  .countdown-item {
-    min-width: auto;
+  .countdown-value {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    overflow: visible;
   }
 
-  .countdown-separator {
-    margin-bottom: 1rem;
+  .countdown-label {
+    font-size: clamp(0.5rem, 2vw, 0.75rem);
+    white-space: nowrap;
+  }
+
+  .countdown-values-wrapper {
+    gap: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
