@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import WinterSolsticeCountdown from './WinterSolsticeCountdown';
 import Snowflakes from './Snowflakes';
+import Footer from './Footer';
 import './FlareStatistics.css';
 
 const FlareStatistics: React.FC = () => {
@@ -20,6 +21,7 @@ const FlareStatistics: React.FC = () => {
         style={{ color: 'transparent' }}
       />
       <WinterSolsticeCountdown />
+      <Footer />
     </div>
   );
 };

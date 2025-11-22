@@ -51,24 +51,26 @@ const WinterSolsticeCountdown: React.FC = () => {
     <div className="countdown-container">
       <div className="countdown-title">Winter Solstice 2025</div>
       <div className="countdown-timer">
-        <div className="countdown-item">
-          <div className="countdown-value">{timeLeft.days}</div>
-          <div className="countdown-label">Days</div>
-        </div>
-        <div className="countdown-separator">:</div>
-        <div className="countdown-item">
-          <div className="countdown-value">{String(timeLeft.hours).padStart(2, '0')}</div>
-          <div className="countdown-label">Hours</div>
-        </div>
-        <div className="countdown-separator">:</div>
-        <div className="countdown-item">
-          <div className="countdown-value">{String(timeLeft.minutes).padStart(2, '0')}</div>
-          <div className="countdown-label">Minutes</div>
-        </div>
-        <div className="countdown-separator">:</div>
-        <div className="countdown-item">
-          <div className="countdown-value">{String(timeLeft.seconds).padStart(2, '0')}</div>
-          <div className="countdown-label">Seconds</div>
+        <div className="countdown-values-wrapper">
+          <div className="countdown-item">
+            <div className="countdown-value">{timeLeft.days}</div>
+            <div className="countdown-label">Days</div>
+          </div>
+          <div className="countdown-separator">:</div>
+          <div className="countdown-item">
+            <div className="countdown-value">{String(timeLeft.hours).padStart(2, '0')}</div>
+            <div className="countdown-label">Hours</div>
+          </div>
+          <div className="countdown-separator">:</div>
+          <div className="countdown-item">
+            <div className="countdown-value">{String(timeLeft.minutes).padStart(2, '0')}</div>
+            <div className="countdown-label">Minutes</div>
+          </div>
+          <div className="countdown-separator">:</div>
+          <div className="countdown-item">
+            <div className="countdown-value">{String(timeLeft.seconds).padStart(2, '0')}</div>
+            <div className="countdown-label">Seconds</div>
+          </div>
         </div>
       </div>
     </div>
