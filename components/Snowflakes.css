@@ -1,0 +1,100 @@
+.snowflakes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snowflake-svg {
+  width: 100%;
+  height: 100%;
+  color: white;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Swaying motion for more natural fall */
+.snowflake:nth-child(odd) {
+  animation: snowfall-sway-left linear infinite;
+}
+
+.snowflake:nth-child(even) {
+  animation: snowfall-sway-right linear infinite;
+}
+
+@keyframes snowfall-sway-left {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(-50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes snowfall-sway-right {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)) translateX(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Disable animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .snowflake {
+    animation: none;
+    display: none;
+  }
+}
+

@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import WinterSolsticeCountdown from './WinterSolsticeCountdown';
+import Snowflakes from './Snowflakes';
 import './FlareStatistics.css';
 
 const FlareStatistics: React.FC = () => {
   return (
     <div className="flare-statistics-wrapper">
+      <Snowflakes />
       <Image
         alt=""
         loading="lazy"
