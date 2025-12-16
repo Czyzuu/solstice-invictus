@@ -79,6 +79,7 @@
 
 .animate-slow-spin {
   animation: slow-spin 300s linear infinite;
+  transform-origin: center center;
 }
 
 /* Responsive scaling - 140% on mobile, 100% on xl screens */
@@ -90,6 +91,27 @@
 
 .scale-140 {
   scale: 1.4;
+}
+
+/* Mobile centering fixes */
+@media (max-width: 1279px) {
+  .flare-statistics-wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flare-statistics-graphic {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    left: auto;
+    right: auto;
+    transform-origin: center center;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
+  }
 }
 
 /* Transform is handled by animation, so we don't need a separate transform class */
