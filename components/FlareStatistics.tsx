@@ -14,7 +14,7 @@ const FlareStatistics: React.FC = () => {
         muted
         playsInline
       >
-        <source src="/Generated File December 15, 2025 - 11_24PM.mp4" type="video/mp4" />
+        <source src="/background-video.mp4" type="video/mp4" />
       </video>
       <div className="video-overlay"></div>
       <Image
