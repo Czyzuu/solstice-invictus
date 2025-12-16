@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import './WinterSolsticeCountdown.css';
 
 const WinterSolsticeCountdown: React.FC = () => {
-  // Winter Solstice 2025: December 21, 2025 at 9:48 UTC
-  const targetDate = new Date('2025-12-21T09:48:00Z').getTime();
+  // December 22, 2025 at 9:48 UTC
+  const targetDate = new Date('2025-12-22T09:48:00Z').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -49,7 +49,7 @@ const WinterSolsticeCountdown: React.FC = () => {
 
   return (
     <div className="countdown-container">
-      <div className="countdown-title">Winter Solstice 2025</div>
+      <div className="countdown-title">Solstice Invictus</div>
       <div className="countdown-timer">
         <div className="countdown-values-wrapper">
           <div className="countdown-item">

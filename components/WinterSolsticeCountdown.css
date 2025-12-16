@@ -52,36 +52,36 @@
   padding: 0 0.25rem;
 }
 
-/* Days - orange (left side) */
+/* Days */
 .countdown-item:nth-child(1) .countdown-value {
-  background: linear-gradient(90deg, #ed863b 0%, #ff9e36 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-/* Hours - orange (keep orange longer) */
+/* Hours */
 .countdown-item:nth-child(3) .countdown-value {
-  background: linear-gradient(90deg, #ff9e36 0%, #ff9e36 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-/* Minutes - orange to pink to blue transition (this is where transition happens) */
+/* Minutes */
 .countdown-item:nth-child(5) .countdown-value {
-  background: linear-gradient(90deg, #ff9e36 0%, #e09bc5 50%, #a5c5de 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-/* Seconds - blue (right side) */
+/* Seconds */
 .countdown-item:nth-child(7) .countdown-value {
-  background: linear-gradient(90deg, #a5c5de 0%, #a5c5de 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,9 +111,9 @@
   white-space: nowrap;
 }
 
-/* Separators match the gradient of adjacent numbers */
+/* Separators */
 .countdown-separator:nth-child(2) {
-  background: linear-gradient(90deg, #ff9e36 0%, #ff9e36 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -121,7 +121,7 @@
 }
 
 .countdown-separator:nth-child(4) {
-  background: linear-gradient(90deg, #ff9e36 0%, #ff9e36 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,7 +129,7 @@
 }
 
 .countdown-separator:nth-child(6) {
-  background: linear-gradient(90deg, #a5c5de 0%, #a5c5de 100%);
+  background: linear-gradient(90deg, #e63918 0%, #e63918 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

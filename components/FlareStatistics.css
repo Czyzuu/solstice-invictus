@@ -8,7 +8,7 @@
   max-width: 100vw;
   max-height: 100vh;
   padding: 2rem;
-  background: oklch(23.14% .0404 296.24); /* Dark purple background matching brand-purple */
+  background: oklch(23.14% .0404 296.24); /* Dark purple background matching brand-purple - fallback */
   overflow: hidden;
   box-sizing: border-box;
   position: fixed;
@@ -16,6 +16,30 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay - adjust opacity as needed */
+  z-index: 1;
+  pointer-events: none;
 }
 
 .flare-statistics-graphic {
@@ -39,6 +63,8 @@
   scrollbar-width: thin;
   scrollbar-color: oklch(43.38% .0234 275.84 / 0.3) transparent;
   object-fit: contain;
+  position: relative;
+  z-index: 5;
 }
 
 /* Slow spin animation (300s duration) */

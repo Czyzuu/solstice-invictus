@@ -1,14 +1,22 @@
 import Image from 'next/image';
 import React from 'react';
 import WinterSolsticeCountdown from './WinterSolsticeCountdown';
-import Snowflakes from './Snowflakes';
 import Footer from './Footer';
 import './FlareStatistics.css';
 
 const FlareStatistics: React.FC = () => {
   return (
     <div className="flare-statistics-wrapper">
-      <Snowflakes />
+      <video
+        className="background-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/Generated File December 15, 2025 - 11_24PM.mp4" type="video/mp4" />
+      </video>
+      <div className="video-overlay"></div>
       <Image
         alt=""
         loading="lazy"
